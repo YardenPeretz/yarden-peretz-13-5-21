@@ -1,0 +1,67 @@
+
+.display_cities{
+    border: 1.5px solid black;
+    margin-top: 10px;
+    width: 80%;
+    height: auto;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.top_section{
+    width: 100%;
+    height: auto; 
+}
+.tlv_default{
+    width: 50px;
+    height: 50px;
+    border: 0.5px solid black;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.top_section_list{
+    width: 100%;
+    height: auto;
+    padding: 0;
+    display: inline-flex;
+    list-style: none;
+}
+.add_favorites{
+    margin-left: auto;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.dsc_heading{
+   margin-top: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.display_days_and_degrees{
+    width: auto;
+    height: auto;
+    margin: 0;
+}
+
+.row{
+    margin:0; 
+}
+
+.day_box{
+    border: 0.5px solid black; 
+    height: 100px;
+    margin-top: 10px;
+
+}
+.display_days_and_degrees{
+   width: 100%;
+   height: auto;
+
+}
+
+
+
+
+
