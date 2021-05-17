@@ -1,10 +1,10 @@
-import counterReducer from './counter';
-import loggedReducer from './isLogged';
+import searchCityReducer from './Search_city';
+import addCityReducer from './Add_favorite';
 import {combineReducers} from 'redux';
 
 const allReducers = combineReducers({
-    counter: counterReducer,
-    isLogged: loggedReducer
+    searchCity: searchCityReducer,
+    addFavoriteCity: addCityReducer
 });
 
 export default allReducers;

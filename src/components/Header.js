@@ -1,11 +1,13 @@
 import React from 'react';
 import '../css/header.css';
-import {useSelector , useDispatch} from 'react-redux';
-import {increment} from '../actions/index';
+import {favorites} from './Favorites';
+
+const display_favorites = () => {
+    console.log(favorites());
+}
 
 const Header = () => {
-    const counter = useSelector(state => state.counter);
-    const dispatch = useDispatch();
+
     return (
         <div className="nav-bar">
             <ul>
@@ -14,7 +16,7 @@ const Header = () => {
                 </li>
 
                 <li className="nav-btns">
-                    <input type="button" onClick = {() => dispatch(increment())}value="FAVORITES" id="favorites_btn" />
+                    <input type="button" value="FAVORITES" id="favorites_btn" onClick={display_favorites} />
                     <input type="button" value="HOME" className="nav-btns" id="home_btn" />
                 </li>
             </ul>

@@ -1,7 +1,6 @@
 import Header from "./Header";
 import Search from "./Search";
-import Content from "./Weather";
-
+import Weather from "./Weather";
 
 
 function App() {
@@ -9,7 +8,7 @@ function App() {
     <div className="container-fluid">
         <Header />
         <Search />
-        <Content />
+        <Weather />
     </div>
   );
 }
