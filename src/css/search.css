@@ -1,5 +1,15 @@
 
 .search_bar{
+    width: 100%;
+    height: auto;
     text-align: center;
     margin-top: 20px;
 }
+.search_bar ul{
+    width:185px;
+    padding: 0;
+    list-style: none;
+    margin-right: auto;
+    margin-left: auto;
+}
+

@@ -1,12 +1,21 @@
 import React from 'react';
 import '../css/header.css';
-import {favorites} from './Favorites';
+import { favorites } from './Favorites';
+import { useHistory } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
+
+
+
+
+/*
 const display_favorites = () => {
     console.log(favorites());
 }
+*/
 
 const Header = () => {
+
 
     return (
         <div className="nav-bar">
@@ -16,12 +25,16 @@ const Header = () => {
                 </li>
 
                 <li className="nav-btns">
-                    <input type="button" value="FAVORITES" id="favorites_btn" onClick={display_favorites} />
-                    <input type="button" value="HOME" className="nav-btns" id="home_btn" />
+                    
+                        <Link id="favorites_btn" to="/Favorites">FAVORITES</Link>
+                        <Link className="nav-btns" id="home_btn" to="/">HOME</Link>
+                    
                 </li>
             </ul>
+
         </div>
+
     )
 }
 
-export default Header
+export default Header;

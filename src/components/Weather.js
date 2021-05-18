@@ -1,17 +1,20 @@
-import React from 'react'
-import '../css/weather.css'
+import React from 'react';
+import '../css/weather.css';
 import { useSelector, useDispatch } from 'react-redux';
 import { add_favorite } from '../actions/Add_favorite';
 //import search from './components/Search';
-import store from '../store'
+import store from '../store';
 import axios from "axios";
-
-
+import { autocompleteSearch } from './WeatherApi';
+import { currentConditions } from './WeatherApi';
+import { selected_city_exp } from './Search';
 
 const debuger = () => {
     const temp = store.getState();
     console.log(temp);
+
 }
+
 const Weather = () => {
     const counter = useSelector(state => state.counter);
     const dispatch = useDispatch();
@@ -21,10 +24,25 @@ const Weather = () => {
         const last_search = current_store.searchCity;
         dispatch(add_favorite(last_search));
     }
-
+  
+    setInterval(() => {
+        const display_city_name = document.getElementById('display_city_name');
+      
+        if(selected_city_exp() != undefined && selected_city_exp() != '' && selected_city_exp() != null && display_city_name != null ){
+            display_city_name.innerText = selected_city_exp();
+       
+        }
+    },500);
+   
+    // get temperature and details about current location
+    /*
+    let empty_string = '';
+    currentConditions(empty_string);
+    */
     return (
 
         <div className="display_cities">
+
             <input type="button" onClick={debuger} value="show_store" />
             <div className="top_section">
                 <ul className="top_section_list">
@@ -32,7 +50,7 @@ const Weather = () => {
                         <div className="tlv_default"></div>
                     </li>
                     <li className="city_details">
-                        <h5 className="city_name">Tel Aviv</h5>
+                        <h5 className="city_name" id="display_city_name">Tel Aviv</h5>
                         <p className="city_temp">38 C</p>
                     </li>
                     <li className="add_favorites">
@@ -46,12 +64,11 @@ const Weather = () => {
 
             <div className="display_days_and_degrees">
                 <div className="row">
-                    <div className="col-sm-3 day_box">sunday</div>
-                    <div className="col-sm-3 day_box">monday</div>
-                    <div className="col-sm-3 day_box">tuesday</div>
-                    <div className="col-sm-3 day_box">wednesday</div>
-                    <div className="col-sm-3 day_box">thursday</div>
-
+                    <div className="col-sm-3 day_box"></div>
+                    <div className="col-sm-3 day_box"></div>
+                    <div className="col-sm-3 day_box"></div>
+                    <div className="col-sm-3 day_box"></div>
+                    <div className="col-sm-3 day_box"></div>
                 </div>
             </div>
 
@@ -63,4 +80,4 @@ const Weather = () => {
     )
 }
 
-export default Weather
+export default Weather;

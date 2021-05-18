@@ -1,4 +1,4 @@
-[
+const data = [
     {
       "Version": 1,
       "Key": "317036",
