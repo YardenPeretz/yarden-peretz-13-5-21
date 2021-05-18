@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/yarden-peretz-13-5-21/static/css/main.5eebb34d.chunk.css",
-    "main.js": "/yarden-peretz-13-5-21/static/js/main.5e895c05.chunk.js",
-    "main.js.map": "/yarden-peretz-13-5-21/static/js/main.5e895c05.chunk.js.map",
+    "main.js": "/yarden-peretz-13-5-21/static/js/main.7c68db2d.chunk.js",
+    "main.js.map": "/yarden-peretz-13-5-21/static/js/main.7c68db2d.chunk.js.map",
     "runtime-main.js": "/yarden-peretz-13-5-21/static/js/runtime-main.dd35647a.js",
     "runtime-main.js.map": "/yarden-peretz-13-5-21/static/js/runtime-main.dd35647a.js.map",
     "static/js/2.af0b1d7d.chunk.js": "/yarden-peretz-13-5-21/static/js/2.af0b1d7d.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.dd35647a.js",
     "static/js/2.af0b1d7d.chunk.js",
     "static/css/main.5eebb34d.chunk.css",
-    "static/js/main.5e895c05.chunk.js"
+    "static/js/main.7c68db2d.chunk.js"
   ]
 }
