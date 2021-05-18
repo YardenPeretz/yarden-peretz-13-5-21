@@ -82,7 +82,7 @@ const Search = () => {
 
     return (
         <div className="search_bar">
-            <div>flotz</div>
+
             <p>Search City : </p>
             <input type="text" id="city_name" value={city} onChange={change} className="basicAutoComplete" />
             <br></br>

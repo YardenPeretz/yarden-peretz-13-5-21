@@ -44,7 +44,7 @@ export const currentConditions = (curr_string) => {
 
     if (curr_string != '' || curr_string != undefined) {
         axios
-            .get(`http://dataservice.accuweather.com/currentconditions/v1/215854?apikey=M0neXmqgNyGUaB1sgb7PFHXpzYHSGuZO`)
+            .get(`https://dataservice.accuweather.com/currentconditions/v1/215854?apikey=M0neXmqgNyGUaB1sgb7PFHXpzYHSGuZO`)
             .then(response => {
                 console.log(response);
             })
@@ -53,7 +53,7 @@ export const currentConditions = (curr_string) => {
             });
     } else {
         axios
-            .get(`http://dataservice.accuweather.com/currentconditions/v1/215854?apikey=M0neXmqgNyGUaB1sgb7PFHXpzYHSGuZO`)
+            .get(`https://dataservice.accuweather.com/currentconditions/v1/215854?apikey=M0neXmqgNyGUaB1sgb7PFHXpzYHSGuZO`)
             .then(response => {
                 console.log(response);
             })
@@ -66,7 +66,7 @@ export const currentConditions = (curr_string) => {
 
 export const nextFiveDays = () => {
     axios
-        .get(`http://dataservice.accuweather.com/forecasts/v1/daily/5day/215854?apikey=%09dfaWC3wisjfgrAGq0lMixKHo0SRq4GDl`)
+        .get(`https://dataservice.accuweather.com/forecasts/v1/daily/5day/215854?apikey=%09dfaWC3wisjfgrAGq0lMixKHo0SRq4GDl`)
         .then(response => {
             console.log(response);
         })
