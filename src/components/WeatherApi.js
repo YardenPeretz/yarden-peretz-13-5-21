@@ -5,7 +5,7 @@ export const autocompleteSearch = (chars) => {
     //M0neXmqgNyGUaB1sgb7PFHXpzYHSGuZO new api
     //dfaWC3wisjfgrAGq0lMixKHo0SRq4GDl old api
     axios
-        .get(`https://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=dfaWC3wisjfgrAGq0lMixKHo0SRq4GDl&q=${chars}`)
+        .get(`dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=dfaWC3wisjfgrAGq0lMixKHo0SRq4GDl&q=${chars}`)
         .then(response => {
             // recieving all possible cities based on string returned from search input.
             // and push it to auto_complete_results array
