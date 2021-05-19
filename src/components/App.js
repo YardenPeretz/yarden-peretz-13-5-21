@@ -9,16 +9,13 @@ function App() {
   return (
     <div className="container-fluid">
 
-
         <Header />
         <Search />
-        <Switch>
-          
+        <Switch>       
           <Favorites path="/Favorites" component={Favorites} />
           <Weather path="/" component={Weather} />
         </Switch>
 
-   
     </div>
   );
 }

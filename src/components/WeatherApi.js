@@ -1,5 +1,5 @@
 import axios from "axios";
-
+let city_key = '';
 export const auto_complete_results = [];
 export const autocompleteSearch = (chars) => {
     //M0neXmqgNyGUaB1sgb7PFHXpzYHSGuZO new api
@@ -7,11 +7,13 @@ export const autocompleteSearch = (chars) => {
     axios
         .get(`https://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=dfaWC3wisjfgrAGq0lMixKHo0SRq4GDl&q=${chars}`)
         .then(response => {
-            // recieving all possible cities based on string returned from search input.
+            // retrieving all possible cities based on string returned from search input.
             // and push it to auto_complete_results array
+            city_key = response.data[0].Key;
             const temp_cities_arr = [];
             response.data.forEach(element => {
                 const city_name = element.LocalizedName;
+                //const city_key = element.Key;
                 auto_complete_results.push(city_name);
                 temp_cities_arr.push(city_name);
 
@@ -46,6 +48,10 @@ export const currentConditions = (curr_string) => {
         axios
             .get(`https://dataservice.accuweather.com/currentconditions/v1/215854?apikey=M0neXmqgNyGUaB1sgb7PFHXpzYHSGuZO`)
             .then(response => {
+                let today_temp = document.getElementById('today_temp');
+                let today = document.getElementById('today');
+                today.innerText = 'today';
+                today_temp.innerText = response.data[0].Temperature.Metric.Value;
                 console.log(response);
             })
             .catch(function (error) {
@@ -53,7 +59,7 @@ export const currentConditions = (curr_string) => {
             });
     } else {
         axios
-            .get(`https://dataservice.accuweather.com/currentconditions/v1/215854?apikey=M0neXmqgNyGUaB1sgb7PFHXpzYHSGuZO`)
+            .get(`https://dataservice.accuweather.com/currentconditions/v1/${city_key}?apikey=M0neXmqgNyGUaB1sgb7PFHXpzYHSGuZO`)
             .then(response => {
                 console.log(response);
             })
@@ -63,11 +69,14 @@ export const currentConditions = (curr_string) => {
     }
 
 }
-
+export const next_five_days_results = [];
 export const nextFiveDays = () => {
     axios
-        .get(`https://dataservice.accuweather.com/forecasts/v1/daily/5day/215854?apikey=%09dfaWC3wisjfgrAGq0lMixKHo0SRq4GDl`)
+        .get(`https://dataservice.accuweather.com/forecasts/v1/daily/5day/${city_key}?apikey=%09dfaWC3wisjfgrAGq0lMixKHo0SRq4GDl`)
         .then(response => {
+            response.data.forEach(element => {
+                
+            });
             console.log(response);
         })
         .catch(function (error) {

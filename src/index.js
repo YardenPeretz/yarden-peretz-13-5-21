@@ -1,16 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-
 import App from './components/App';
 import reportWebVitals from './reportWebVitals';
-
-//import { createStore } from 'redux';
-//import allReducers from './reducers/index'
 import store from './store'
 import { Provider } from 'react-redux'
-import search from './components/Search';
-import axios from "axios";
+
 import { BrowserRouter as Router, Switch, Link, withRouter } from 'react-router-dom';
 
 //const store = createStore(allReducers, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
