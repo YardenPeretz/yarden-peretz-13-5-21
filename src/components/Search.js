@@ -3,7 +3,6 @@ import '../css/search.css';
 import store from '../store'
 import { useSelector, useDispatch } from 'react-redux';
 import { search_city } from '../actions/Search_city';
-import { push_val } from '../actions/Search_city';
 import { autocompleteSearch } from './WeatherApi';
 import { auto_complete_results } from './WeatherApi';
 
@@ -87,9 +86,7 @@ const Search = () => {
             <input type="text" id="city_name" value={city} onChange={change} className="basicAutoComplete" />
             <br></br>
             <select id="ac_results" onChange={changeFunc}>
-                <option>tel aviv</option>
-                <option>gaza</option>
-                <option>yeruham</option>
+
             </select>
 
         </div>

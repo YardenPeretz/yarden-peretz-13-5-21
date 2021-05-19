@@ -1,5 +1,6 @@
 import axios from "axios";
 let city_key = '';
+
 export const auto_complete_results = [];
 export const autocompleteSearch = (chars) => {
     //M0neXmqgNyGUaB1sgb7PFHXpzYHSGuZO new api
@@ -41,18 +42,17 @@ export const autocompleteSearch = (chars) => {
 }
 
 const curr_string = '';
-export const currentConditions = (curr_string) => {
+export const currentConditions = (city_key) => {
     // checking if search input is empty, if not empty then set default city(tel-aviv)
 
-    if (curr_string != '' || curr_string != undefined) {
+    if (city_key != '' || city_key != undefined) {
         axios
             .get(`https://dataservice.accuweather.com/currentconditions/v1/215854?apikey=M0neXmqgNyGUaB1sgb7PFHXpzYHSGuZO`)
             .then(response => {
-                let today_temp = document.getElementById('today_temp');
-                let today = document.getElementById('today');
+                const today_temp = document.getElementById('today_temp');
+                const today = document.getElementById('today');
                 today.innerText = 'today';
                 today_temp.innerText = response.data[0].Temperature.Metric.Value;
-                console.log(response);
             })
             .catch(function (error) {
                 console.log(error);
@@ -61,7 +61,11 @@ export const currentConditions = (curr_string) => {
         axios
             .get(`https://dataservice.accuweather.com/currentconditions/v1/${city_key}?apikey=M0neXmqgNyGUaB1sgb7PFHXpzYHSGuZO`)
             .then(response => {
-                console.log(response);
+                const today_temp = document.getElementById('today_temp');
+                const today = document.getElementById('today');
+                today.innerText = 'today';
+                today_temp.innerText = response.data[0].Temperature.Metric.Value;
+               
             })
             .catch(function (error) {
                 console.log(error);
@@ -74,9 +78,12 @@ export const nextFiveDays = () => {
     axios
         .get(`https://dataservice.accuweather.com/forecasts/v1/daily/5day/${city_key}?apikey=%09dfaWC3wisjfgrAGq0lMixKHo0SRq4GDl`)
         .then(response => {
+            /*
             response.data.forEach(element => {
                 
             });
+            */
+
             console.log(response);
         })
         .catch(function (error) {

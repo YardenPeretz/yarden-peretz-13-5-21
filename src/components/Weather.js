@@ -4,8 +4,6 @@ import { useSelector, useDispatch } from 'react-redux';
 import { add_favorite } from '../actions/Add_favorite';
 //import search from './components/Search';
 import store from '../store';
-import axios from "axios";
-import { autocompleteSearch } from './WeatherApi';
 import { currentConditions } from './WeatherApi';
 import { nextFiveDays } from './WeatherApi';
 import { selected_city_exp } from './Search';

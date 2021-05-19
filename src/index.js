@@ -6,10 +6,11 @@ import reportWebVitals from './reportWebVitals';
 import store from './store'
 import { Provider } from 'react-redux'
 
-import { BrowserRouter as Router, Switch, Link, withRouter } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Link, withRouter, BrowserRouter } from 'react-router-dom';
 
 //const store = createStore(allReducers, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 //setInterval(function(){console.log(store.getState());},5000)
+
 
 ReactDOM.render(
   <React.StrictMode>
