@@ -68,7 +68,7 @@ const Weather = () => {
             </div>{/*end top_section*/}
 
 
-            <h2 className="dsc_heading">scattered clouds</h2>
+            <h2 className="dsc_heading">heading</h2>
 
             <div className="display_days_and_degrees">
                 <div className="row">
