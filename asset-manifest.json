@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/yarden-peretz-13-5-21/static/css/main.0f81eba2.chunk.css",
-    "main.js": "/yarden-peretz-13-5-21/static/js/main.ef04b8bc.chunk.js",
-    "main.js.map": "/yarden-peretz-13-5-21/static/js/main.ef04b8bc.chunk.js.map",
-    "runtime-main.js": "/yarden-peretz-13-5-21/static/js/runtime-main.dd35647a.js",
-    "runtime-main.js.map": "/yarden-peretz-13-5-21/static/js/runtime-main.dd35647a.js.map",
-    "static/js/2.8c5c77ed.chunk.js": "/yarden-peretz-13-5-21/static/js/2.8c5c77ed.chunk.js",
-    "static/js/2.8c5c77ed.chunk.js.map": "/yarden-peretz-13-5-21/static/js/2.8c5c77ed.chunk.js.map",
-    "static/js/3.fa17edea.chunk.js": "/yarden-peretz-13-5-21/static/js/3.fa17edea.chunk.js",
-    "static/js/3.fa17edea.chunk.js.map": "/yarden-peretz-13-5-21/static/js/3.fa17edea.chunk.js.map",
+    "main.css": "/yarden-peretz-13-5-21/static/css/main.b0c75fe5.chunk.css",
+    "main.js": "/yarden-peretz-13-5-21/static/js/main.3cc84d00.chunk.js",
+    "main.js.map": "/yarden-peretz-13-5-21/static/js/main.3cc84d00.chunk.js.map",
+    "runtime-main.js": "/yarden-peretz-13-5-21/static/js/runtime-main.11d2614d.js",
+    "runtime-main.js.map": "/yarden-peretz-13-5-21/static/js/runtime-main.11d2614d.js.map",
+    "static/js/2.8e7fe5bd.chunk.js": "/yarden-peretz-13-5-21/static/js/2.8e7fe5bd.chunk.js",
+    "static/js/2.8e7fe5bd.chunk.js.map": "/yarden-peretz-13-5-21/static/js/2.8e7fe5bd.chunk.js.map",
+    "static/js/3.438dcfae.chunk.js": "/yarden-peretz-13-5-21/static/js/3.438dcfae.chunk.js",
+    "static/js/3.438dcfae.chunk.js.map": "/yarden-peretz-13-5-21/static/js/3.438dcfae.chunk.js.map",
     "index.html": "/yarden-peretz-13-5-21/index.html",
-    "static/css/main.0f81eba2.chunk.css.map": "/yarden-peretz-13-5-21/static/css/main.0f81eba2.chunk.css.map",
-    "static/js/2.8c5c77ed.chunk.js.LICENSE.txt": "/yarden-peretz-13-5-21/static/js/2.8c5c77ed.chunk.js.LICENSE.txt"
+    "static/css/main.b0c75fe5.chunk.css.map": "/yarden-peretz-13-5-21/static/css/main.b0c75fe5.chunk.css.map",
+    "static/js/2.8e7fe5bd.chunk.js.LICENSE.txt": "/yarden-peretz-13-5-21/static/js/2.8e7fe5bd.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.dd35647a.js",
-    "static/js/2.8c5c77ed.chunk.js",
-    "static/css/main.0f81eba2.chunk.css",
-    "static/js/main.ef04b8bc.chunk.js"
+    "static/js/runtime-main.11d2614d.js",
+    "static/js/2.8e7fe5bd.chunk.js",
+    "static/css/main.b0c75fe5.chunk.css",
+    "static/js/main.3cc84d00.chunk.js"
   ]
 }
