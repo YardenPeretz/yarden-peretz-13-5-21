@@ -6,7 +6,7 @@ export const autocompleteSearch = (chars) => {
     //M0neXmqgNyGUaB1sgb7PFHXpzYHSGuZO new api
     //dfaWC3wisjfgrAGq0lMixKHo0SRq4GDl old api
     axios
-        .get(`https://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=dfaWC3wisjfgrAGq0lMixKHo0SRq4GDl&q=${chars}`)
+        .get(`https://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=M0neXmqgNyGUaB1sgb7PFHXpzYHSGuZO&q=${chars}`)
         .then(response => {
             // retrieving all possible cities based on string returned from search input.
             // and push it to auto_complete_results array
@@ -47,7 +47,7 @@ export const currentConditions = (city_key) => {
 
     if (city_key != '' || city_key != undefined) {
         axios
-            .get(`https://dataservice.accuweather.com/currentconditions/v1/215854?apikey=M0neXmqgNyGUaB1sgb7PFHXpzYHSGuZO`)
+            .get(`https://dataservice.accuweather.com/currentconditions/v1/215854?apikey=M0neXmqgNyGUaB1sgb7PFHXpzYHSGuZO&`)
             .then(response => {
                 const today_temp = document.getElementById('today_temp');
                 const today = document.getElementById('today');
@@ -59,7 +59,7 @@ export const currentConditions = (city_key) => {
             });
     } else {
         axios
-            .get(`https://dataservice.accuweather.com/currentconditions/v1/${city_key}?apikey=M0neXmqgNyGUaB1sgb7PFHXpzYHSGuZO`)
+            .get(`https://dataservice.accuweather.com/currentconditions/v1/${city_key}?apikey=M0neXmqgNyGUaB1sgb7PFHXpzYHSGuZO&`)
             .then(response => {
                 const today_temp = document.getElementById('today_temp');
                 const today = document.getElementById('today');

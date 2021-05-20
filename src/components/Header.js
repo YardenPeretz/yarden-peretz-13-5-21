@@ -26,8 +26,8 @@ const Header = () => {
 
                 <li className="nav-btns">
                     
-                        <Link id="favorites_btn" to="/Favorites">FAVORITES</Link>
-                        <Link className="nav-btns" id="home_btn" to="/">HOME</Link>
+                        <Link id="favorites_btn" className="btn btn-primary" to="/Favorites">FAVORITES</Link>
+                        <Link className="nav-btns" className="btn btn-primary" id="home_btn" to="/">HOME</Link>
                     
                 </li>
             </ul>

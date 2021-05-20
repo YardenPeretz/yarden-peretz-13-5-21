@@ -21,7 +21,10 @@ const Weather = () => {
     const addFavoriteCity = () => {
         const current_store = store.getState();
         const last_search = current_store.searchCity;
-        dispatch(add_favorite(last_search));
+        if(last_search != undefined && last_search != '' && last_search !=selected_city_exp()){
+            dispatch(add_favorite(last_search));
+
+        }
     }
 
     setInterval(() => {
@@ -33,18 +36,18 @@ const Weather = () => {
     }, 500);
 
     // get temperature and details about current location
-    
+
     let empty_string = '';
-    
-    currentConditions();
-    
+
+    //currentConditions();
+
 
     /*
     setTimeout(() => {
         nextFiveDays();
     },5000)
     */
-    
+
     return (
 
         <div className="display_cities">
@@ -57,10 +60,10 @@ const Weather = () => {
                     </li>
                     <li className="city_details">
                         <h5 className="city_name" id="display_city_name">Tel Aviv</h5>
-                        <p className="city_temp" id="today_temp"></p>
+                        <p className="city_temp" id="today_temp">38C</p>
                     </li>
                     <li className="add_favorites">
-                        <input type="button" onClick={() => addFavoriteCity()} value="Add to Favorites" />
+                        <input type="button" onClick={() => addFavoriteCity()} className="btn" value="Add to Favorites" />
                     </li>
                 </ul>
             </div>{/*end top_section*/}
@@ -70,11 +73,26 @@ const Weather = () => {
 
             <div className="display_days_and_degrees">
                 <div className="row">
-                    <div className="col-sm-2 day_box"></div>
-                    <div className="col-sm-2 day_box"></div>
-                    <div className="col-sm-2 day_box"></div>
-                    <div className="col-sm-2 day_box"></div>
-                    <div className="col-sm-2 day_box"></div>
+                    <div className="col-sm-2 day_box">
+                        <h5>sun</h5>
+                        <p>38C</p>
+                    </div>
+                    <div className="col-sm-2 day_box">
+                        <h5>mon</h5>
+                        <p>38C</p>
+                    </div>
+                    <div className="col-sm-2 day_box">
+                        <h5>tue</h5>
+                        <p>38C</p>
+                    </div>
+                    <div className="col-sm-2 day_box">
+                        <h5>wed</h5>
+                        <p>38C</p>
+                    </div>
+                    <div className="col-sm-2 day_box">
+                        <h5>thu</h5>
+                        <p>38C</p>
+                    </div>
                 </div>
             </div>
 

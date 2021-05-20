@@ -13,13 +13,13 @@ import { BrowserRouter as Router, Switch, Link, withRouter, BrowserRouter } from
 
 
 ReactDOM.render(
-  <React.StrictMode>
+
     <Provider store={store}>
-      <Router>
+      
         <App />
-      </Router>
-    </Provider>
-  </React.StrictMode>,
+     
+    </Provider>,
+ 
   document.getElementById('root')
 );
 

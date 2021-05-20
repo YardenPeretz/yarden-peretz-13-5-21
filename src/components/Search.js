@@ -8,8 +8,8 @@ import { auto_complete_results } from './WeatherApi';
 
 import axios from "axios";
 
-
 let selected_city = '';
+
 const Search = () => {
 
     const city = useSelector(state => state.city);
@@ -17,15 +17,16 @@ const Search = () => {
     let string = '';
 
     const change = () => {
-
         const city_name = document.getElementById('city_name');
+        selected_city = city_name.value;
+
         string = city_name.value;
         if (string != '') {
             // storing search result in store obj
             dispatch(search_city(string));
 
             // calling auto complete function with search input value as parameter.
-            autocompleteSearch(string);
+           // autocompleteSearch(string);
 
         }
         if (city_name.value === '') {
@@ -36,17 +37,23 @@ const Search = () => {
 
 
         const ac_results = document.getElementById('ac_results');
+        //const all_option = ac_results.getElementsByTagName("option")
         // creating option element for each key
+        //const city_opt = document.getElementsByClassName('city_opt');
+    
         if (auto_complete_results.length > 0) {
+            
             auto_complete_results.map(key => {
 
                 const add_city_option = document.createElement('option');
+                add_city_option.className = 'city_opt';
                 add_city_option.innerHTML = key;
                 ac_results.appendChild(add_city_option);
 
             });
         }
 
+        /*
         const all_option = ac_results.getElementsByTagName("option")
         if (all_option != null) {
             for (let i = 0; i < all_option.length; i++) {
@@ -56,6 +63,8 @@ const Search = () => {
             }
 
         }
+        */
+        
         console.log(auto_complete_results);
 
     } // end change func'
@@ -82,8 +91,8 @@ const Search = () => {
     return (
         <div className="search_bar">
 
-            <p>Search City : </p>
-            <input type="text" id="city_name" value={city} onChange={change} className="basicAutoComplete" />
+            <p className="h4">Search City </p>
+            <input type="text" id="city_name" value={city} onChange={change} className="form-control" />
             <br></br>
             <select id="ac_results" onChange={changeFunc}>
 

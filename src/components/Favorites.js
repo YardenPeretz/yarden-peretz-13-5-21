@@ -9,13 +9,29 @@ const favorites = () => {
     const appendFavCity = () => {
 
         if (fav_list != null) {
-            get_favorites.forEach(element => {
+            get_favorites.map(element => {
 
                 const add_city_div = document.createElement('div');
+                
                 add_city_div.className = "col-sm-4 favorite";
                 add_city_div.innerHTML = element.city;
+                const favorite_div = document.getElementsByTagName('div');
+                
 
-                fav_list.appendChild(add_city_div);
+
+                   // const div = document.getElementsByTagName('div');
+                  
+                 
+                
+
+                 
+                        fav_list.appendChild(add_city_div)
+                
+                       
+                   
+                
+           
+              
             });
         }
 
@@ -23,7 +39,11 @@ const favorites = () => {
 
     }
 
+    
     /*
+    const delete_old_div = () =>{
+
+    
     const all_div = fav_list.getElementsByTagName("div");
     if (all_div != null) {
         for (let i = 0; i < all_div.length; i++) {
@@ -33,7 +53,10 @@ const favorites = () => {
         }
 
     }
-    */
+
+}
+*/
+    
 
     return (
 
