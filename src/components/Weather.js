@@ -8,7 +8,7 @@ import { currentConditions } from './WeatherApi';
 import { nextFiveDays } from './WeatherApi';
 import { selected_city_exp } from './Search';
 
-const debuger = () => {
+const show_store = () => {
     const temp = store.getState();
     console.log(temp);
 
@@ -35,30 +35,20 @@ const Weather = () => {
         }
     }, 500);
 
-    // get temperature and details about current location
-
-    let empty_string = '';
-
-    
-
-
-    /*
-    setTimeout(() => {
-        nextFiveDays();
-    },5000)
-    */
 
     return (
 
         <div className="display_cities">
 
-            <input type="button" onClick={debuger} id="show_store" value="show_store" />
+            
             <div className="top_section">
+                
                 <ul className="top_section_list">
-                    <li>
-                        <div className="tlv_default" id="today"></div>
-                    </li>
+                    
+                        
+                   
                     <li className="city_details">
+                        <h2 id="today"></h2>
                         <h5 className="city_name" id="display_city_name">Tel Aviv</h5>
                         <p className="city_temp" id="today_temp">38C</p>
                     </li>
@@ -69,29 +59,29 @@ const Weather = () => {
             </div>{/*end top_section*/}
 
 
-            <h2 className="dsc_heading">heading</h2>
+            <h2 className="dsc_heading" id="weather_text">heading</h2>
 
             <div className="display_days_and_degrees">
                 <div className="row">
                     <div className="col-sm-2 day_box">
                         <h5>sun</h5>
-                        <p>38C</p>
+                        <p id="first_day_temp">38C</p>
                     </div>
                     <div className="col-sm-2 day_box">
                         <h5>mon</h5>
-                        <p>38C</p>
+                        <p id="second_day_temp">38C</p>
                     </div>
                     <div className="col-sm-2 day_box">
                         <h5>tue</h5>
-                        <p>38C</p>
+                        <p id="third_day_temp">38C</p>
                     </div>
                     <div className="col-sm-2 day_box">
                         <h5>wed</h5>
-                        <p>38C</p>
+                        <p id="fourth_day_temp">38C</p>
                     </div>
                     <div className="col-sm-2 day_box">
                         <h5>thu</h5>
-                        <p>38C</p>
+                        <p id="fifth_day_temp">38C</p>
                     </div>
                 </div>
             </div>

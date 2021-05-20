@@ -1,7 +1,7 @@
 import store from '../store'
 import '../css/favorites.css';
 
-const favorites = () => {
+const Favorites = () => {
     const current_store = store.getState();
     const get_favorites = current_store.addFavoriteCity;
 
@@ -20,18 +20,9 @@ const favorites = () => {
 
 
                    // const div = document.getElementsByTagName('div');
-                  
-                 
-                
-
-                 
+                          
                         fav_list.appendChild(add_city_div)
-                
-                       
-                   
-                
-           
-              
+                    
             });
         }
 
@@ -39,6 +30,7 @@ const favorites = () => {
 
     }
 
+    appendFavCity();
     
     /*
     const delete_old_div = () =>{
@@ -57,17 +49,14 @@ const favorites = () => {
 }
 */
     
-
     return (
-
         <div className="container">
-            <div className="row" id="fav_list" onLoad={appendFavCity()}></div>
+            <div className="row" id="fav_list"></div>
         </div>
-
     )
 }
 
 
 
-export default favorites;
+export default Favorites;
 

@@ -2,7 +2,7 @@
 .display_cities{
     border: 1.5px solid black;
     margin-top: 10px;
-    width: auto;
+    width: 60%;
     min-height: 400px;
     height: auto;
     text-align: center;
@@ -73,6 +73,9 @@
     margin-top: 10px;
 
 }
+.day_box p {
+    font-weight: 700;
+}
 .display_days_and_degrees{
    width: 100%;
    height: auto;
@@ -81,9 +84,7 @@
 #today_temp{
     font-weight: 900;
 }
-#show_store{
-    display: none;
-}
+
 .city_details{
     margin-left: 10px;
 }

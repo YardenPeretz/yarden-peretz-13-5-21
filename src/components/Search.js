@@ -9,12 +9,12 @@ import { auto_complete_results } from './WeatherApi';
 import axios from "axios";
 
 let selected_city = '';
-
+let string = 'tel aviv';
 const Search = () => {
 
     const city = useSelector(state => state.city);
     const dispatch = useDispatch();
-    let string = '';
+    
 
     const change = () => {
         const city_name = document.getElementById('city_name');
