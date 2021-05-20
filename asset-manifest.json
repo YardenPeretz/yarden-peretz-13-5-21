@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/yarden-peretz-13-5-21/static/css/main.930e57cb.chunk.css",
-    "main.js": "/yarden-peretz-13-5-21/static/js/main.f0f47765.chunk.js",
-    "main.js.map": "/yarden-peretz-13-5-21/static/js/main.f0f47765.chunk.js.map",
+    "main.css": "/yarden-peretz-13-5-21/static/css/main.ebbca5a6.chunk.css",
+    "main.js": "/yarden-peretz-13-5-21/static/js/main.42a702d1.chunk.js",
+    "main.js.map": "/yarden-peretz-13-5-21/static/js/main.42a702d1.chunk.js.map",
     "runtime-main.js": "/yarden-peretz-13-5-21/static/js/runtime-main.11d2614d.js",
     "runtime-main.js.map": "/yarden-peretz-13-5-21/static/js/runtime-main.11d2614d.js.map",
     "static/js/2.18219346.chunk.js": "/yarden-peretz-13-5-21/static/js/2.18219346.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.438dcfae.chunk.js": "/yarden-peretz-13-5-21/static/js/3.438dcfae.chunk.js",
     "static/js/3.438dcfae.chunk.js.map": "/yarden-peretz-13-5-21/static/js/3.438dcfae.chunk.js.map",
     "index.html": "/yarden-peretz-13-5-21/index.html",
-    "static/css/main.930e57cb.chunk.css.map": "/yarden-peretz-13-5-21/static/css/main.930e57cb.chunk.css.map",
+    "static/css/main.ebbca5a6.chunk.css.map": "/yarden-peretz-13-5-21/static/css/main.ebbca5a6.chunk.css.map",
     "static/js/2.18219346.chunk.js.LICENSE.txt": "/yarden-peretz-13-5-21/static/js/2.18219346.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.11d2614d.js",
     "static/js/2.18219346.chunk.js",
-    "static/css/main.930e57cb.chunk.css",
-    "static/js/main.f0f47765.chunk.js"
+    "static/css/main.ebbca5a6.chunk.css",
+    "static/js/main.42a702d1.chunk.js"
   ]
 }
