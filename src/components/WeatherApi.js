@@ -3,8 +3,9 @@ let city_key = 'tel aviv';
 
 export const auto_complete_results = [];
 export const autocompleteSearch = (chars) => {
-    //M0neXmqgNyGUaB1sgb7PFHXpzYHSGuZO new api
-    //dfaWC3wisjfgrAGq0lMixKHo0SRq4GDl old api
+    //M0neXmqgNyGUaB1sgb7PFHXpzYHSGuZO new key
+    //dfaWC3wisjfgrAGq0lMixKHo0SRq4GDl old key
+    // sqVSAPfjdrvqSbBKNAu8XLHsGhb6JDRr another key
     axios
         .get(`https://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=sqVSAPfjdrvqSbBKNAu8XLHsGhb6JDRr&q=${chars}`)
         .then(response => {
