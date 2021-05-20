@@ -20,13 +20,14 @@ const Search = () => {
         const city_name = document.getElementById('city_name');
         selected_city = city_name.value;
 
-        string = city_name.value;
+      string = city_name.value;
+        
         if (string != '') {
             // storing search result in store obj
             dispatch(search_city(string));
 
             // calling auto complete function with search input value as parameter.
-           // autocompleteSearch(string);
+            autocompleteSearch(string);
 
         }
         if (city_name.value === '') {
@@ -34,7 +35,7 @@ const Search = () => {
             dispatch(search_city(string));
         }
 
-
+ 
 
         const ac_results = document.getElementById('ac_results');
         //const all_option = ac_results.getElementsByTagName("option")

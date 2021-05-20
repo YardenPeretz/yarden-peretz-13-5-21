@@ -21,7 +21,7 @@ const Header = () => {
         <div className="nav-bar">
             <ul>
                 <li>
-                    <h2>Weather App</h2>
+                    <h2 id="nav_logo">Weather App</h2>
                 </li>
 
                 <li className="nav-btns">

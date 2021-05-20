@@ -39,7 +39,7 @@ const Weather = () => {
 
     let empty_string = '';
 
-    //currentConditions();
+    
 
 
     /*
@@ -63,7 +63,7 @@ const Weather = () => {
                         <p className="city_temp" id="today_temp">38C</p>
                     </li>
                     <li className="add_favorites">
-                        <input type="button" onClick={() => addFavoriteCity()} className="btn" value="Add to Favorites" />
+                        <input type="button" onClick={() => addFavoriteCity()} className="btn btn-light" value="Add Favorite" />
                     </li>
                 </ul>
             </div>{/*end top_section*/}
